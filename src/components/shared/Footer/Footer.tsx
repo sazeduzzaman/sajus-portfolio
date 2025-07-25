@@ -6,10 +6,8 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaUserTie,
-  FaTools,
-  FaFileAlt,
 } from "react-icons/fa";
+import "./footer.css"; // Assuming you have a CSS file for styles
 
 const Footer = () => {
   return (
@@ -17,7 +15,7 @@ const Footer = () => {
       <div className="blob1"></div>
       <div className="blob2"></div>
       <div className="blob3"></div>
-      <footer className="container mx-auto footer sm:footer-horizontal text-base-content p-10 py-15">
+      <footer className="container p-10 mx-auto footer sm:footer-horizontal text-base-content py-15">
         <aside>
           <Link href={"/"} className="text-xl normal-case">
             <div>
@@ -29,7 +27,7 @@ const Footer = () => {
               />
             </div>
           </Link>
-          <p className="mt-2 text-base md:text-sm leading-relaxed text-justify">
+          <p className="mt-2 text-base leading-relaxed text-justify md:text-sm">
             <strong>Saju</strong> — Frontend & Full Stack Developer focused on <br />
             crafting high-performance web applications with <br /> clean code and a 
             user-centered design approach.
@@ -38,16 +36,16 @@ const Footer = () => {
           <SocialIcons />
         </aside>
         <nav>
-          <h6 className="footer-title flex items-center">
+          <h6 className="flex items-center footer-title">
             Projects <span className="title-line"></span>
           </h6>
-          <Link href={"/"} className="link link-hover mb-2">
+          <Link href={"/"} className="mb-2 link link-hover">
             Mern Stack
           </Link>
-          <Link href={"/"} className="link link-hover mb-2">
+          <Link href={"/"} className="mb-2 link link-hover">
             CMS (Wordpress)
           </Link>
-          <Link href={"/"} className="link link-hover mb-2">
+          <Link href={"/"} className="mb-2 link link-hover">
             Php (Larvel Frontend)
           </Link>
           <Link href={"/"} className="link link-hover">
@@ -60,23 +58,23 @@ const Footer = () => {
           </h6>
           <Link
             href={"/"}
-            className="link link-hover flex items-center gap-1 mb-2"
+            className="flex items-center gap-1 mb-2 link link-hover"
           >
             About us
           </Link>
           <Link
             href={"/"}
-            className="link link-hover flex items-center gap-1 mb-2"
+            className="flex items-center gap-1 mb-2 link link-hover"
           >
             Contact
           </Link>
           <Link
             href={"/"}
-            className="link link-hover flex items-center gap-1 mb-2"
+            className="flex items-center gap-1 mb-2 link link-hover"
           >
             Skills
           </Link>
-          <Link href={"/"} className="link link-hover flex items-center gap-1">
+          <Link href={"/"} className="flex items-center gap-1 link link-hover">
             Resume
           </Link>
         </nav>
@@ -111,13 +109,13 @@ const Footer = () => {
         </nav>
       </footer>
       <div className="footer-bottom-top">
-        <div className="container mx-auto p-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="container p-4 mx-auto">
+          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-center md:text-left ">
               © {new Date().getFullYear()} - All rights reserved by{" "}
-              <span className=" font-semibold">Saju</span>
+              <span className="font-semibold ">Saju</span>
             </p>
-            <div className="gap-4 flex justify-center">
+            <div className="flex justify-center gap-4">
               <Link href="/resume.pdf" target="_blank" className="font-normal">
                 Faq's
               </Link>

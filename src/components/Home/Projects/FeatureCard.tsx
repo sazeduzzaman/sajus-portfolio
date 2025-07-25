@@ -1,0 +1,65 @@
+import React from "react";
+import "./featureProject.css";
+import Link from "next/link";
+import ButtonThree from "@/components/Buttons/ButtonThree";
+
+const projects = [
+  {
+    id: 1,
+    title: "Creative Landing Page",
+    category: "Web / Design",
+    img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
+  },
+  {
+    id: 2,
+    title: "E-commerce Platform",
+    category: "E-commerce",
+    img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
+  },
+  {
+    id: 3,
+    title: "Portfolio Showcase",
+    category: "Portfolio",
+    img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
+  },
+  {
+    id: 4,
+    title: "Mobile App UI",
+    category: "Mobile / UI",
+    img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
+  },
+];
+
+const FeatureCard = () => {
+    
+  return (
+    <div className="container mx-auto mb-20">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        {projects.map((project) => (
+          <Link href="/" key={project.id}>
+            <div className="overflow-hidden transition-all duration-300 transform rounded-lg feature-cards hover:-translate-y-2 hover:shadow-xl">
+              <img
+                src={project.img}
+                alt="Project Thumbnail"
+                className="object-cover w-full mb-4 rounded-t-lg"
+              />
+              <div className="flex items-center justify-between p-5 bg-[#494949]">
+                <div>
+                  <p className="mb-1 text-sm tracking-wide text-white uppercase">
+                    {project.category}
+                  </p>
+                  <h3 className="text-2xl font-semibold site-text">
+                    {project.title}
+                  </h3>
+                </div>
+                <ButtonThree text="View Details" />
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default FeatureCard;

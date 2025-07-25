@@ -1,0 +1,9 @@
+.experience-items {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.experience-items:hover {
+  border-bottom: 1px solid var(--primary-color);
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}

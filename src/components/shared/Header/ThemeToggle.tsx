@@ -18,7 +18,7 @@ export default function ThemeToggle() {
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     setTheme(newTheme);
-  };
+};
 
   return (
     <button className="btn btn-ghost btn-circle">
@@ -29,9 +29,9 @@ export default function ThemeToggle() {
           checked={theme === "dark"}
         />
         {/* sun icon */}
-        <FiSun className="swap-off w-6 h-6 text-gray-800 dark:text-white" />
+        <FiSun className="w-6 h-6 text-gray-800 swap-off dark:text-white" />
         {/* moon icon */}
-        <FaCloudMoon className="swap-on w-6 h-6 text-yellow-400" />
+        <FaCloudMoon className="w-6 h-6 text-yellow-400 swap-on" />
       </label>
     </button>
   );

@@ -1,0 +1,27 @@
+.info-bg {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.ex-amount {
+  font-size: 50px;
+  font-weight: bold;
+}
+.ex-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(28, 29, 32);
+  line-height: 27px;
+}
+.about-image-wrapper {
+  position: relative;
+  background-image: url("/images/bg-shape-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 50px;
+}
+.about-image {
+  position: relative;
+  bottom: -120px;
+  z-index: 2;
+}

@@ -3,6 +3,7 @@ import { Figtree, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header/Header";
 import Footer from "@/components/shared/Footer/Footer";
+import CustomCursor from "@/components/CustomCursor/CustomCursor";
 
 const spaceGroteskSans = Space_Grotesk({
   variable: "--font-space-grotesk-sans",
@@ -24,11 +25,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
         className={`${figtreeSans.variable} ${spaceGroteskSans.variable} antialiased`}
       >
+        <CustomCursor />
         <Header />
         {children}
         <Footer />

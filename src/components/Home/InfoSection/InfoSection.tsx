@@ -1,22 +1,25 @@
 import Image from "next/image";
 import React from "react";
 import { FaHandsClapping } from "react-icons/fa6";
+import { PiPhone } from "react-icons/pi";
+import "./infoSection.css";
+import ButtonThree from "@/components/Buttons/ButtonThree";
 
 const InfoSection = () => {
   return (
     <div>
       <div className="info-bg">
         <div className="container mx-auto ">
-          <div className="grid grid-cols-12 items-center">
+          <div className="grid items-center grid-cols-12">
             <div className="col-span-6">
               <div>
-                <h1 className="text-1xl font-bold mb-10 text-black flex items-center">
-                  <FaHandsClapping className="me-5 site-text-two text-2xl" />
+                <h1 className="flex items-center mb-20 font-bold text-black text-1xl">
+                  <FaHandsClapping className="text-2xl me-5 site-text-two" />
                   About Me
                 </h1>
-                <h4 className="banner-title font-medium mb-4 text-black">
+                <h4 className="mb-4 font-medium text-black banner-title">
                   Building Web Experiences With{" "}
-                  <span className="site-text">Intuitive Design</span>
+                  <span className="typing-text">Intuitive Design</span>
                 </h4>
                 <p className="w-[75%]">
                   I'm a passionate Frontend Developer and ongoing student,
@@ -28,30 +31,37 @@ const InfoSection = () => {
 
               <div className="flex items-center mt-10">
                 <div className="flex items-center me-10">
-                  <h1 className="ex-amount">02<span className="site-text">+</span></h1>
-                  <p className="ex-text font-normal ps-2">
+                  <h1 className="ex-amount">
+                    02<span className="typing-text">+</span>
+                  </h1>
+                  <p className="font-normal ex-text ps-2">
                     Years <br /> Experience...
                   </p>
                 </div>
                 <div className="flex items-center me-10">
-                  <h1 className="ex-amount">50<span className="site-text">+</span></h1>
-                  <p className="ex-text font-normal ps-2">
+                  <h1 className="ex-amount">
+                    50<span className="typing-text">+</span>
+                  </h1>
+                  <p className="font-normal ex-text ps-2">
                     Project <br /> Completed...
                   </p>
                 </div>
               </div>
-              <div className="mt-10">
-                <button className="reverse-learn-more">
-                  <span className="circle">
-                    <span className="icon arrow"></span>
-                  </span>
-                  <span className="button-text">About Me</span>
-                </button>
+              <div className="flex items-center mt-10">
+                <ButtonThree text="About Me" />
+                <div className="flex items-center ml-10">
+                  <PiPhone className="w-12 h-12 p-3 mr-3 text-2xl border rounded-full site-text-two" />
+                  <div>
+                    <strong>Phone</strong>
+                    <br />
+                    <a href="tel:+8801576614451">+880 1576614451</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-span-6">
               <div className="about-image-wrapper">
-                <div className="flex justify-center items-center about-image">
+                <div className="flex items-center justify-center about-image">
                   <Image
                     src="/images/1.png"
                     width={500}

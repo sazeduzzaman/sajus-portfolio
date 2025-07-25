@@ -1,0 +1,55 @@
+
+.title-line {
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+.footer-title {
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.link.link-hover {
+  position: relative;
+  padding-left: 1.5em; /* space for chevron */
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.link.link-hover::before {
+  content: "\276F"; /* right chevron */
+  position: absolute;
+  left: 0;
+  color: var(--text-color); /* accent color */
+  font-size: 1.2em;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+.link.link-hover:hover {
+  transform: translateX(6px); /* move text right */
+}
+
+.link.link-hover:hover::before {
+  color: var(--primary-color); /* darker accent on hover */
+}
+
+.footer-bottom-top {
+  background-color: rgba(255, 255, 255, 0.411);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.footer-main {
+  background-image: url("/images/noise-two.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

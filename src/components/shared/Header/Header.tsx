@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="navbar text-base-content">
           <div className="navbar-start">
-            <a className="text-xl normal-case">
+            <Link href="/" className="text-xl normal-case">
               <div>
                 <Image
                   src="/images/logo.png"
@@ -18,45 +18,45 @@ const Header = () => {
                   alt="Picture of the author"
                 />
               </div>
-            </a>
+            </Link>
           </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+          <div className="hidden navbar-center lg:flex">
+            <ul className="px-1 menu menu-horizontal">
               <li>
-                <a href="#home" className="menu-item">
+                <Link href="/"  className="menu-item">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#projects" className="menu-item">
+                <Link href="/projects"  className="menu-item">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#skills" className="menu-item">
+                <Link href="/skills"  className="menu-item">
                   Skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="menu-item">
+                <Link href="/about" className="menu-item">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="menu-item">
+                <Link href="/contact"  className="menu-item">
                   Contact
-                </a>
+                </Link>
               </li>
               {/* Optional */}
               <li>
-                <a href="/resume.pdf" target="_blank" className="menu-item">
+                <Link href="/resume"  target="_blank" className="menu-item">
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#blog" className="menu-item">
+                <Link href="/blog" className="menu-item">
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -74,7 +74,7 @@ const Header = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -88,7 +88,7 @@ const Header = () => {
                 </svg>
               </div>
             </div>
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
         </div>
       </div>
