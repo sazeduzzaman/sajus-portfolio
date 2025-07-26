@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import './commonBanner.css'
+import "./commonBanner.css";
 
 interface CommonBannerProps {
   title: string;
@@ -17,7 +17,7 @@ const CommonBanner: React.FC<CommonBannerProps> = ({
     <div className="contact-banner">
       <div className="noise-overlay" />
       <div className="container mx-auto">
-        <div className="banner-content">
+        <div className="capitalize banner-content">
           <nav className="mb-0 breadcrumb">
             <Link href="/" className="hover-underline">
               Home
@@ -32,7 +32,7 @@ const CommonBanner: React.FC<CommonBannerProps> = ({
             )}
             <span>{currentPage}</span>
           </nav>
-          <h1 className="banner-title">{title}</h1>
+          <h1 className="capitalize banner-title">{title}</h1>
         </div>
       </div>
     </div>

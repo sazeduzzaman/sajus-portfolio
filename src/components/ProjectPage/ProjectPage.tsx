@@ -1,5 +1,6 @@
 import React from "react";
 import CommonBanner from "../CommonBanner/CommonBanner";
+import FeatureProject from "../Home/Projects/FeatureProject";
 
 const ProjectPage = () => {
   return (
@@ -9,6 +10,7 @@ const ProjectPage = () => {
         currentPage="Project"
         parentPage={{ href: "/projects" }}
       />
+      <FeatureProject />
     </div>
   );
 };

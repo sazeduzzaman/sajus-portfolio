@@ -58,14 +58,14 @@ const Header = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="relative inline-block bg-transparent menu-item after-effect"
+                  className="relative inline-block bg-tra nsparent menu-item after-effect"
                 >
                   Contact
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blog"
+                  href="/blogs  "
                   className="relative inline-block bg-transparent menu-item after-effect"
                 >
                   Blog
