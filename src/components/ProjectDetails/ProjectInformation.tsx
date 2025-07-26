@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import ButtonThree from "../Buttons/ButtonThree";
+import Link from "next/link";
+import ButtonOne from "../Buttons/ButtonOne";
 
 const ProjectInformation = () => {
   return (
@@ -13,7 +15,7 @@ const ProjectInformation = () => {
             width={1200}
             height={600}
             alt="Project Cover"
-            className="object-cover w-full h-auto shadow-md rounded-3xl"
+            className="object-cover w-full h-auto rounded-3xl"
           />
         </div>
 
@@ -36,8 +38,9 @@ const ProjectInformation = () => {
               At <strong>Your Restaurant Name</strong>, food is more than just a
               meal—it’s an experience. Whether you’re craving comfort food or
               gourmet dishes, we deliver quality, flavor, and consistency. Fresh
-              ingredients, user-friendly ordering, and a commitment to excellence
-              make this project a complete package for digital food services.
+              ingredients, user-friendly ordering, and a commitment to
+              excellence make this project a complete package for digital food
+              services.
             </p>
 
             {/* Research & Insights */}
@@ -46,7 +49,9 @@ const ProjectInformation = () => {
                 Research & User Insights
               </h2>
               <ul className="space-y-2 text-gray-700 list-disc list-inside">
-                <li>Understanding customer behavior through surveys and feedback.</li>
+                <li>
+                  Understanding customer behavior through surveys and feedback.
+                </li>
                 <li>Analyzing user flow and refining the checkout process.</li>
                 <li>Ensuring accessibility across all devices.</li>
               </ul>
@@ -96,14 +101,14 @@ const ProjectInformation = () => {
                 width={600}
                 height={400}
                 alt="Screenshot 1"
-                className="object-cover w-full rounded-2xl"
+                className="object-cover w-full border shadow-sm rounded-2xl "
               />
               <Image
                 src="/images/project-single.jpg"
                 width={600}
                 height={400}
                 alt="Screenshot 2"
-                className="object-cover w-full rounded-2xl"
+                className="object-cover w-full border shadow-sm rounded-2xl"
               />
             </div>
 
@@ -111,8 +116,8 @@ const ProjectInformation = () => {
             <div className="p-6 shadow-sm bg-gray-50 rounded-2xl">
               <h2 className="mb-3 text-2xl font-semibold">Client Feedback</h2>
               <blockquote className="italic text-gray-600">
-                “Working with this developer was a great experience. The delivery
-                platform exceeded expectations!”
+                “Working with this developer was a great experience. The
+                delivery platform exceeded expectations!”
               </blockquote>
               <p className="mt-2 text-sm text-right text-gray-500">
                 — GourmetHub CEO
@@ -157,23 +162,25 @@ const ProjectInformation = () => {
                 ))}
               </ul>
 
-              <div className="mt-6 space-y-2">
-                <a
-                  href="https://your-live-site.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full py-2 text-sm text-center text-white transition bg-green-600 rounded-lg hover:bg-green-700"
-                >
-                  🌐 Live Preview
-                </a>
-                <a
-                  href="https://github.com/your/repo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full py-2 text-sm text-center text-white transition bg-gray-800 rounded-lg hover:bg-gray-900"
-                >
-                  💻 View Code
-                </a>
+              <div className="flex flex-col items-center justify-center mt-6 space-y-2">
+                <div className="mt-3">
+                  <Link
+                    href="https://your-live-site.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ButtonOne text="🌐 Live Preview" />
+                  </Link>
+                </div>
+                <div className="">
+                  <Link
+                    href="https://github.com/your/repo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ButtonOne text="💻 View Code" />
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -189,9 +196,10 @@ const ProjectInformation = () => {
                   className="object-cover"
                 />
               </div>
-              <h2 className="mb-1 text-3xl font-bold">Don't Hesitate To</h2>
+              <h2 className="mb-1 text-2xl font-bold">Don't Hesitate To</h2>
               <h2 className="mb-4 text-xl font-bold">Contact Me</h2>
-              <p className="mb-6 text-sm text-gray-700">+880 15766 14451</p>
+              <p className="text-sm text-gray-700 ">+880 15766 14451</p>
+              <p className="mb-6 text-sm text-gray-700">szamansaju@gmail.com</p>
               <ButtonThree text="Get In Touch" />
             </div>
           </div>
