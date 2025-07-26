@@ -36,7 +36,7 @@ const Footer = () => {
           <h6 className="flex items-center footer-title">
             Projects <span className="title-line"></span>
           </h6>
-          <Link href={"/"} className="mb-2 link link-hover">
+          <Link href="/" className="mb-2 link link-hover">
             Mern Stack
           </Link>
           <Link href={"/"} className="mb-2 link link-hover">
@@ -54,24 +54,27 @@ const Footer = () => {
             Pages <span className="title-line"></span>
           </h6>
           <Link
-            href={"/"}
+            href="/about"
             className="flex items-center gap-1 mb-2 link link-hover"
           >
             About us
           </Link>
           <Link
-            href={"/"}
+            href="/contact"
             className="flex items-center gap-1 mb-2 link link-hover"
           >
             Contact
           </Link>
           <Link
-            href={"/"}
+            href="/skills"
             className="flex items-center gap-1 mb-2 link link-hover"
           >
             Skills
           </Link>
-          <Link href={"/"} className="flex items-center gap-1 link link-hover">
+          <Link
+            href="/resume"
+            className="flex items-center gap-1 link link-hover"
+          >
             Resume
           </Link>
         </nav>
@@ -113,13 +116,13 @@ const Footer = () => {
               <span className="font-semibold ">Saju</span>
             </p>
             <div className="flex justify-center gap-4">
-              <Link href="/resume.pdf" target="_blank" className="font-normal">
+              <Link href="/faqs" className="font-normal">
                 Faq's
               </Link>
-              <Link href="/resume.pdf" target="_blank" className="font-normal">
+              <Link href="/terms" className="font-normal">
                 Terms
               </Link>
-              <Link href="/resume.pdf" target="_blank" className="font-normal">
+              <Link href="/privacy" className="font-normal">
                 Privacy & Policy
               </Link>
             </div>

@@ -39,7 +39,7 @@ const FeatureCard = () => {
     <div className="container mx-auto mb-20">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {projects.map((project) => (
-          <Link href={`/project/${project.slug}`} key={project.id}>
+          <Link href={`/project-details/${project.slug}`} key={project.id}>
             <div className="overflow-hidden transition-all duration-300 transform rounded-lg feature-cards hover:-translate-y-2 hover:shadow-xl">
               <img
                 src={project.img}
