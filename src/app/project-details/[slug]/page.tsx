@@ -6,7 +6,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div className="">
-      <ProjectDetails slug={slug}></ProjectDetails>
+      {/* <ProjectDetails slug={slug}></ProjectDetails> */}
+      asdasd
     </div>
   );
 }
