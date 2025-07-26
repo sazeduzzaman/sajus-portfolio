@@ -5,6 +5,7 @@ import { BsClockHistory } from "react-icons/bs";
 import { LiaUsersSolid } from "react-icons/lia";
 import { PiHouseLineBold } from "react-icons/pi";
 import { IoBookmarksOutline, IoClose } from "react-icons/io5";
+import "./Certificates.css";
 
 const Cources = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -39,7 +40,7 @@ const Cources = () => {
   ];
 
   return (
-    <div className="relative p-6 text-black bg-white">
+    <div className="relative p-6 px-0 text-black bg-white">
       {/* Modal Overlay */}
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
@@ -55,7 +56,7 @@ const Cources = () => {
               alt="Zoomed"
               width={400}
               height={400}
-              className="w-full h-auto rounded-lg shadow-lg"
+              className="w-full h-auto shadow-lg rounded-2xl"
             />
           </div>
         </div>
@@ -65,11 +66,11 @@ const Cources = () => {
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         {/* Courses Column */}
         <div>
-          <div className="space-y-4">
+          <div className="space-y-5">
             {courses.map((course, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 p-4 bg-gray-100 rounded-lg shadow-sm"
+                className="flex items-center gap-4 p-4 bg-gray-100 shadow-sm rounded-2xl"
               >
                 <Image
                   src={course.image}
@@ -102,14 +103,13 @@ const Cources = () => {
             ))}
           </div>
         </div>
-
         {/* Certificates Column */}
         <div>
           <div className="space-y-2">
             {certificates.map((cert, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 p-4 bg-gray-100 rounded-lg shadow-sm"
+                className="flex items-center gap-4 p-4 bg-gray-100 shadow-sm rounded-2xl"
               >
                 <Image
                   src={cert.image}
@@ -138,6 +138,15 @@ const Cources = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div>
+            <Image
+              src="/images/trophy.webp"
+              alt="Certificate"
+              width={400}
+              height={400}
+              className="trophy-image"
+            />
           </div>
         </div>
       </div>

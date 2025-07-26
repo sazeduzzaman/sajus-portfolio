@@ -5,8 +5,8 @@ import Cources from "./Cources";
 const Certificates = () => {
   return (
     <div>
-      <div className="container mx-auto">
-        <h1 className="flex items-center justify-start mt-10 mb-5 text-xl font-bold text-black">
+      <div className="container mx-auto my-10">
+        <h1 className="flex items-center justify-start mb-5 text-xl font-bold text-black mt-15">
           <FaHandsClapping className="mr-5 text-2xl typing-text" />
           Achivement
         </h1>
@@ -15,7 +15,7 @@ const Certificates = () => {
             Cource & <span className="typing-text">Certificates</span>
           </h2>
         </div>
-      <Cources />
+        <Cources />
       </div>
     </div>
   );

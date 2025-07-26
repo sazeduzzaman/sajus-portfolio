@@ -2,11 +2,7 @@ import SocialIcons from "@/components/SocialIcons/SocialIcons";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import "./footer.css"; // Assuming you have a CSS file for styles
 
 const Footer = () => {
@@ -28,9 +24,10 @@ const Footer = () => {
             </div>
           </Link>
           <p className="mt-2 text-base leading-relaxed text-justify md:text-sm">
-            <strong>Saju</strong> — Frontend & Full Stack Developer focused on <br />
-            crafting high-performance web applications with <br /> clean code and a 
-            user-centered design approach.
+            <strong>Saju</strong> — Frontend & Full Stack Developer focused on{" "}
+            <br />
+            crafting high-performance web applications with <br /> clean code
+            and a user-centered design approach.
           </p>
 
           <SocialIcons />
@@ -87,7 +84,7 @@ const Footer = () => {
             href="tel:+8801234567890"
             className="flex items-center gap-2 mb-3"
           >
-            <FaPhoneAlt className="site-text" /> +880 1234 567890
+            <FaPhoneAlt className="site-text" /> +880 1576614451
           </Link>
 
           <Link

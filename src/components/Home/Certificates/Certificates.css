@@ -1,0 +1,9 @@
+.trophy-image {
+    border-radius: 10px;
+    width: 33%;
+    height: auto;
+    position: relative;
+    left: 98%;
+    bottom: -17.8rem;
+    transform: translateX(-62%);
+}
