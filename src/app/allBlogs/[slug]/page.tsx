@@ -10,7 +10,7 @@ export default async function page({ params }: { params: { slug: string } }) {
       <CommonBanner
         title={slug}
         currentPage={slug}
-        parentPage={{ href: `/projects/${slug}` }} // fixed here
+        parentPage={{ href: `/allBlogs/${slug}` }} // fixed here
       />
       <BlogDetails slug={slug}></BlogDetails>
     </div>
