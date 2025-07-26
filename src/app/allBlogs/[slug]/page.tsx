@@ -2,17 +2,23 @@ import BlogDetails from "@/components/BlogsPage/BlogDetails/BlogDetails";
 import CommonBanner from "@/components/CommonBanner/CommonBanner";
 import React from "react";
 
-export default async function page({ params }: { params: { slug: string } }) {
+type BlogPageProps = {
+  params: {
+    slug: string;
+  };
+};
+
+export default async function BlogPage({ params }: BlogPageProps) {
   const { slug } = params;
 
   return (
     <div className="">
       <CommonBanner
-        title={slug}
+        title={slug.replace(/-/g, " ")}
         currentPage={slug}
-        parentPage={{ href: `/allBlogs/${slug}` }} // fixed here
+        parentPage={{ href: `/allBlogs/${slug}` }}
       />
-      <BlogDetails slug={slug}></BlogDetails>
+      <BlogDetails slug={slug} />
     </div>
   );
 }
