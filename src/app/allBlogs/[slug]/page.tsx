@@ -6,10 +6,9 @@ export async function generateMetadata(
   props: Promise<{ params: { slug: string } }>
 ): Promise<Metadata> {
   const { params } = await props;
-  const formatted = params.slug.replace(/-/g, " ");
   return {
-    title: `${formatted} | Blog`,
-    description: `Detailed post about ${formatted}`,
+    title: `${params} | Blog`,
+    description: `Detailed post about ${params}`,
   };
 }
 
