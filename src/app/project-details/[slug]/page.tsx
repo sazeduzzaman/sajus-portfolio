@@ -1,10 +1,8 @@
 import ProjectDetails from "@/components/ProjectDetails/ProjectDetails";
 import React from "react";
 
-
-  export async function Page({ params }: any) {
+export default async function page({ params }: any) {
   const { slug } = await params; // <-- no await here
-
 
   return (
     <div className="">
