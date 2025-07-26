@@ -1,3 +1,4 @@
+import Certificates from "@/components/Home/Certificates/Certificates";
 import Experience from "@/components/Home/Experience/Experience";
 import HeroBanner from "@/components/Home/HeroBanner/HeroBanner";
 import InfoSection from "@/components/Home/InfoSection/InfoSection";
@@ -13,6 +14,7 @@ const page = () => {
       <ServiceSection />
       <FeatureProject />
       <Experience />
+      <Certificates />
       {/* Add more components as needed */}
     </div>
   );

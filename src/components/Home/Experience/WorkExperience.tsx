@@ -35,11 +35,11 @@ const experiences = [
 
 const WordExperience = () => {
   return (
-    <div className="px-4 mt-10 mb-5">
+    <div className="mt-10 mb-5">
       {experiences.map((exp, index) => (
         <div
           key={index}
-          className="flex flex-col items-start justify-between w-full max-w-6xl gap-2 p-4 mx-auto transition-colors duration-300 experience-items md:flex-row md:items-center md:gap-10"
+          className="flex flex-col items-start justify-between gap-2 p-4 mx-auto transition-colors duration-300 experience-items md:flex-row md:items-center md:gap-10"
         >
           <span className="text-lg font-semibold text-gray-500">{exp.id}</span>
           <span className="text-xl font-medium text-gray-500">{exp.title}</span>

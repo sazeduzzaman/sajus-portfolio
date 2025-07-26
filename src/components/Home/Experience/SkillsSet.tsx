@@ -5,10 +5,14 @@ import Image from "next/image";
 
 export default function SkillsSet() {
   const [emblaRef] = useEmblaCarousel(
-    { loop: true, containScroll: "keepSnaps" },
+    {
+      loop: true,
+      align: "start", // Align from start
+      slidesToScroll: 1, // Scroll 1 at a time
+    },
     [
       AutoScroll({
-        stopOnMouseEnter: true,
+        stopOnMouseEnter: false,
         stopOnInteraction: false,
         speed: 0.85,
         startDelay: 50,
@@ -16,36 +20,47 @@ export default function SkillsSet() {
     ]
   );
 
-  // Static sample skills with image and alt text
   const skills = [
-    { name: "React", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/1.svg" },
-    { name: "Next.js", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2.svg" },
-    { name: "Vercel", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/3.svg" },
-    { name: "Laravel Blade", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/4.svg" },
-    { name: "Tailwind CSS", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/5.svg" },
-    { name: "Node.js", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/6.svg" },
-    { name: "MongoDB", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/7.svg" },
-    { name: "Figma", img: "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/8.svg" },
+    { name: "Bootstrap", img: "/images/skills/Bootstrap.png" },
+    { name: "Chrome", img: "/images/skills/Chrome.png" },
+    { name: "CSS3", img: "/images/skills/CSS3.png" },
+    { name: "D3.js", img: "/images/skills/D3.js.png" },
+    { name: "Express", img: "/images/skills/Express.png" },
+    { name: "Figma", img: "/images/skills/Figma.png" },
+    { name: "Firebase", img: "/images/skills/Firebase.png" },
+    { name: "Git", img: "/images/skills/Git.png" },
+    { name: "GitHub", img: "/images/skills/GitHub.png" },
+    { name: "HTML5", img: "/images/skills/HTML5.png" },
+    { name: "JavaScript", img: "/images/skills/JavaScript.png" },
+    { name: "Laravel", img: "/images/skills/Laravel.png" },
+    { name: "MongoDB", img: "/images/skills/MongoDB.png" },
+    { name: "Next.js", img: "/images/skills/Next.js.png" },
+    { name: "NPM", img: "/images/skills/NPM.png" },
+    { name: "React", img: "/images/skills/React.png" },
+    { name: "TailwindCSS", img: "/images/skills/TailwindCSS.png" },
+    { name: "Trello", img: "/images/skills/Trello.png" },
+    { name: "Vercel", img: "/images/skills/Vercel.png" },
+    { name: "VSCode", img: "/images/skills/VSCode.png" },
+    { name: "WooCommerce", img: "/images/skills/WooCommerce.png" },
+    { name: "WordPress", img: "/images/skills/WordPress.png" },
   ];
 
-  const extendedSkills = [...skills, ...skills, ...skills]; // for infinite scroll
-
   return (
-    <div className="bg-black">
-      <section className="flex items-center py-8 mx-auto text-white">
-        <div className="w-full overflow-hidden embla" ref={emblaRef}>
-          <div className="flex items-center embla__container">
-            {extendedSkills.map((skill, index) => (
+    <div className="mt-20 bg-[#1c1d20]">
+      <section className="py-8 text-white skills-box">
+        <div className="overflow-hidden embla" ref={emblaRef}>
+          <div className="flex embla__container">
+            {skills.map((skill, index) => (
               <div
                 key={index}
-                className="embla__slide min-w-0 flex-[0_0_auto] px-6 flex items-center justify-center"
+                className="embla__slide flex-[0_0_10%] px-4 flex items-center justify-center"
               >
                 <Image
                   src={skill.img}
                   alt={skill.name}
                   width={60}
                   height={60}
-                  className="object-contain transition-transform duration-300 hover:scale-110"
+                  className="block object-contain transition-transform duration-300 border hover:scale-110"
                 />
               </div>
             ))}

@@ -29,9 +29,9 @@ const Experience = () => {
         </div>
         <div className="container mx-auto ">
           <WorkExperience />
+          <SkillsSet />
         </div>
       </div>
-      <SkillsSet />
     </section>
   );
 };
