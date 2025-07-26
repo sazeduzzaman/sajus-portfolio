@@ -2,6 +2,7 @@ import ButtonOne from "@/components/Buttons/ButtonOne";
 import ThemeToggle from "@/components/shared/Header/ThemeToggle";
 import Image from "next/image";
 import Link from "next/link";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -23,38 +24,50 @@ const Header = () => {
           <div className="hidden navbar-center lg:flex">
             <ul className="px-1 menu menu-horizontal">
               <li>
-                <Link href="/"  className="menu-item">
+                <Link
+                  href="/"
+                  className="relative inline-block bg-transparent menu-item after-effect"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/projects"  className="menu-item">
+                <Link
+                  href="/projects"
+                  className="relative inline-block bg-transparent menu-item after-effect"
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/skills"  className="menu-item">
-                  Skills
+                <Link
+                  href="/skills"
+                  className="relative inline-block bg-transparent menu-item after-effect"
+                >
+                  Skills & Experience
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="menu-item">
+                <Link
+                  href="/about"
+                  className="relative inline-block bg-transparent menu-item after-effect"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact"  className="menu-item">
+                <Link
+                  href="/contact"
+                  className="relative inline-block bg-transparent menu-item after-effect"
+                >
                   Contact
                 </Link>
               </li>
-              {/* Optional */}
               <li>
-                <Link href="/resume"  target="_blank" className="menu-item">
-                  Resume
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="menu-item">
+                <Link
+                  href="/blog"
+                  className="relative inline-block bg-transparent menu-item after-effect"
+                >
                   Blog
                 </Link>
               </li>

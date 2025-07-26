@@ -1,11 +1,12 @@
-import React from 'react';
+import SkillsPage from "@/components/SkillsPage/SkillsPage";
+import React from "react";
 
 const page = () => {
-    return (
-        <div>
-            skills
-        </div>
-    );
+  return (
+    <div>
+      <SkillsPage />
+    </div>
+  );
 };
 
 export default page;

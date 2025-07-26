@@ -99,10 +99,12 @@ img {
 .site-text-two {
   color: #666666;
 }
-/* ========== Header Css ========== */
-.header-main {
-  border-bottom: 1px solid #eee;
+.typing-text {
+  color: #666666 !important;
 }
+
+/* ========== Header Css ========== */
+
 
 @media only screen and (max-width: 600px) {
   .mobile-none {

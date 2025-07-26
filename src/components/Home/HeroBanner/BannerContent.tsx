@@ -4,8 +4,9 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import { FaHandsClapping } from "react-icons/fa6";
 import IconsAnimation from "./IconsAnimation";
-import styles from './about.module.css';
+import styles from "./about.module.css";
 import ButtonTwo from "@/components/Buttons/ButtonTwo";
+import TextCircle from "@/components/TextCircle/TextCircle";
 
 const BannerContent = () => {
   return (
@@ -16,7 +17,8 @@ const BannerContent = () => {
       </h1>
 
       <h6 className="mb-4 font-medium text-black banner-title dark:text-white">
-        I'm <span className="name-title">Saju,</span> I build<br />
+        I'm <span className="name-title">Saju,</span> I build
+        <br />
         <ReactTyped
           className="typing-text"
           strings={[
@@ -38,9 +40,29 @@ const BannerContent = () => {
         architecture, and a user-first approach — from UI to backend, one line
         at a time.
       </p>
-
-      <div className="mt-10">
-        <ButtonTwo text="Learn More" />
+      <div className="flex items-center mt-10">
+        <div>
+          <div className="flex mb-8">
+            <div className="flex items-center me-10">
+              <h1 className="ex-amount">
+                02<span className="typing-text">+</span>
+              </h1>
+              <p className="font-normal ex-text ps-2">
+                Years <br /> Experience...
+              </p>
+            </div>
+            <div className="flex items-center me-10">
+              <h1 className="ex-amount">
+                50<span className="typing-text">+</span>
+              </h1>
+              <p className="font-normal ex-text ps-2">
+                Project <br /> Completed...
+              </p>
+            </div>
+          </div>
+          <ButtonTwo text="Learn More" />
+        </div>
+        <TextCircle />
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+.after-effect {
+  position: relative;  /* <-- add this */
+  display: inline-block;
+}
+
+.after-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.after-effect:hover::after {
+  width: 100%;
+}
+.header-main {
+  border-bottom: 1px solid #eee;
+}

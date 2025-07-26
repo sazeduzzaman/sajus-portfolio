@@ -1,11 +1,12 @@
-import React from 'react';
+import ContactPage from "@/components/ContactPage/ContactPage";
+import React from "react";
 
 const page = () => {
-    return (
-        <div>
-            contact
-        </div>
-    );
+  return (
+    <div>
+      <ContactPage />
+    </div>
+  );
 };
 
 export default page;

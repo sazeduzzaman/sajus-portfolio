@@ -88,10 +88,10 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="mailto:saju@example.com"
+            href="mailto:szamansaju@gmail.com"
             className="flex items-center gap-2 mb-3"
           >
-            <FaEnvelope className="site-text" /> saju@example.com
+            <FaEnvelope className="site-text" /> szamansaju@gmail.com
           </Link>
 
           <a

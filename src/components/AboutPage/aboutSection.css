@@ -12,14 +12,14 @@
   color: rgb(28, 29, 32);
   line-height: 27px;
 }
-/* .about-image-wrapper {
+.about-image-wrapper {
   position: relative;
   background-image: url("/images/bg-shape-2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   padding: 50px;
-} */
+}
 .about-image {
   position: relative;
   z-index: 2;
