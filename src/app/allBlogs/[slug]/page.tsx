@@ -2,17 +2,13 @@ import BlogDetails from "@/components/BlogsPage/BlogDetails/BlogDetails";
 import CommonBanner from "@/components/CommonBanner/CommonBanner";
 import React from "react";
 
-type BlogPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export default async function BlogPage({ params }: BlogPageProps) {
+// The function must be async and you must await params
+export default async function BlogPage(props: Promise<{ params: { slug: string } }>) {
+  const { params } = await props;
   const { slug } = params;
 
   return (
-    <div className="">
+    <div>
       <CommonBanner
         title={slug.replace(/-/g, " ")}
         currentPage={slug}
