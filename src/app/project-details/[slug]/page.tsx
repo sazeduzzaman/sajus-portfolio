@@ -1,13 +1,14 @@
 import ProjectDetails from "@/components/ProjectDetails/ProjectDetails";
 import React from "react";
 
-export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+
+  export async function Page({ params }: any) {
+  const { slug } = await params; // <-- no await here
+
 
   return (
     <div className="">
-      {/* <ProjectDetails slug={slug}></ProjectDetails> */}
-      asdasd
+      <ProjectDetails slug={slug}></ProjectDetails>
     </div>
   );
 }
