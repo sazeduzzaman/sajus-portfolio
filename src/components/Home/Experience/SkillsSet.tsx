@@ -46,7 +46,7 @@ export default function SkillsSet() {
   ];
 
   return (
-    <div className="mt-20 bg-[#1c1d20]">
+    <div className="mt-20 mb-10 bg-[#1c1d20]">
       <section className="py-8 text-white skills-box">
         <div className="overflow-hidden embla" ref={emblaRef}>
           <div className="flex embla__container">

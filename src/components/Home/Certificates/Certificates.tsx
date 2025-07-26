@@ -1,6 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import { FaHandsClapping } from "react-icons/fa6";
+import Cources from "./Cources";
 
 const Certificates = () => {
   return (
@@ -15,6 +15,7 @@ const Certificates = () => {
             Cource & <span className="typing-text">Certificates</span>
           </h2>
         </div>
+      <Cources />
       </div>
     </div>
   );
