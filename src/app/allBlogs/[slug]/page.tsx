@@ -1,11 +1,15 @@
+import CommonBanner from '@/components/CommonBanner/CommonBanner';
 import React from 'react';
 
-const page = () => {
+export default async function page({ params }: any) {
+  const { slug } = await params;
   return (
     <div>
-      asdad
+      <CommonBanner
+        title={slug}
+        currentPage={slug}
+        parentPage={{ href: `/projects/${slug}` }}
+      />
     </div>
   );
 };
-
-export default page;
