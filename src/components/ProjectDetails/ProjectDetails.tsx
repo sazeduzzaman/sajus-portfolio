@@ -15,7 +15,7 @@ const ProjectDetails = ({ slug }: Props) => {
         currentPage={slug}
         parentPage={{ href: `/projects/${slug}` }} // fixed here
       />
-      <ProjectInformation/>
+      <ProjectInformation slug={slug} />
     </div>
   );
 };

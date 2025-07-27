@@ -2,102 +2,48 @@
   {
     "id": 1,
     "title": "Creative Landing Page",
+    "subtitle": "Create a seamless and engaging food ordering experience.",
     "category": "Web / Design",
     "slug": "creative-landing-page",
-    "img": "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
+    "img": "/images/project-single.jpg",
     "description": "This project involved designing and developing a modern, responsive landing page aimed at boosting user engagement and conversions for a new product launch. The landing page features smooth scroll-triggered animations, a clean layout, and a compelling call-to-action. We focused heavily on accessibility, ensuring that the page works well on all devices and screen sizes. The design includes a dynamic hero section, product highlights, testimonials, and a fully functional lead capture form with client-side validation and error handling. Performance optimization was a key goal, so we used code-splitting and lazy loading techniques to minimize initial load times. Throughout development, we collaborated closely with the marketing team to align the visual identity and messaging, resulting in a polished final product that exceeded the client’s expectations.",
-    "features": [
-      "Scroll-triggered animations",
-      "Responsive for all screen sizes",
-      "Dark/light mode toggle",
-      "Lead capture form with validation"
+
+    "researchInsightsTitle": "Research & User Insights",
+    "researchInsights": [
+      "Understanding customer behavior through surveys and feedback.",
+      "Analyzing user flow and refining the checkout process.",
+      "Ensuring accessibility across all devices."
     ],
+
+    "problemStatementTitle": "Problem Statement",
+    "problemStatement": [
+      "Users struggled with long, complex ordering steps.",
+      "Mobile performance and clarity needed improvement."
+    ],
+
+    "featuresTitle": "Key Features",
+    "features": [
+      "Instant order confirmation and live tracking",
+      "Multi-language support",
+      "Admin dashboard for managing orders and menus"
+    ],
+
+    "techStackTitle": "Tech Stack",
     "techStack": ["HTML", "CSS", "JavaScript", "GSAP", "Tailwind CSS"],
+
     "liveUrl": "https://example.com/creative-landing",
     "githubUrl": "https://github.com/yourusername/creative-landing-page",
+
     "duration": "2 weeks",
     "role": "Frontend Developer",
     "client": "Internal UI/UX Team",
+    "clientFeedback": "Working with this developer was a great experience. The delivery platform exceeded expectations!",
+    "clientName": "GourmetHub CEO",
+    "screenshots": ["/images/project-single.jpg", "/images/webdev.png"],
+    "challengesTitle": "Challenges",
     "challenges": "Animating content without hurting performance across browsers.",
+
+    "solutionTitle": "Solutions",
     "solution": "Used GSAP with optimized lazy loading, and removed unused CSS for performance."
-  },
-  {
-    "id": 2,
-    "title": "E-commerce Platform",
-    "category": "E-commerce",
-    "slug": "ecommerce-platform",
-    "img": "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
-    "description": "A comprehensive e-commerce platform built with the MERN stack designed to handle everything from product catalog management to secure payments and order tracking. This platform features user registration and authentication, product search and filters, a fully integrated shopping cart and checkout flow, and an admin dashboard for managing inventory and orders. To ensure reliability and scalability, the backend uses Express.js and MongoDB with optimized data schemas and indexes. For payments, Stripe was integrated with secure webhook handling. The frontend delivers a smooth user experience with React and Redux for state management, combined with responsive design principles to make the platform mobile-friendly. The project involved rigorous testing, performance tuning, and deployment automation, resulting in a robust solution ready for real-world traffic.",
-    "features": [
-      "Product listing and filtering",
-      "Cart and checkout system",
-      "Admin product & order management",
-      "Stripe payment integration"
-    ],
-    "techStack": [
-      "React",
-      "Redux",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Tailwind CSS"
-    ],
-    "liveUrl": "https://example.com/ecommerce",
-    "githubUrl": "https://github.com/yourusername/ecommerce-platform",
-    "duration": "1 month",
-    "role": "Full Stack Developer",
-    "client": "Startup client (confidential)",
-    "challenges": "Handling large product catalogs and ensuring secure payments.",
-    "solution": "Optimized MongoDB indexing and used secure Stripe webhooks for payment verification."
-  },
-  {
-    "id": 3,
-    "title": "Portfolio Showcase",
-    "category": "Portfolio",
-    "slug": "portfolio-showcase",
-    "img": "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
-    "description": "My personal developer portfolio built with modern tech and motion effects, showcasing my skills, projects, and blog. The portfolio dynamically loads project data from JSON and supports dark mode with theme persistence for a better user experience. It features an animated cursor, smooth scroll reveal animations, and is SEO-optimized for better search engine rankings. The design balances creativity with professionalism, ensuring visitors can easily navigate and explore projects and contact information. This project helped me improve my frontend skills, especially in Next.js, TypeScript, and animation libraries like Framer Motion.",
-    "features": [
-      "Dynamic project loading from JSON",
-      "Dark mode with theme persistence",
-      "Animated cursor and scroll reveals",
-      "SEO-optimized for performance"
-    ],
-    "techStack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    "liveUrl": "https://example.com/portfolio",
-    "githubUrl": "https://github.com/yourusername/portfolio-showcase",
-    "duration": "2 weeks",
-    "role": "Frontend Developer",
-    "client": "Personal Project",
-    "challenges": "Making the site unique while maintaining usability and SEO.",
-    "solution": "Used Framer Motion for UX animations and Next.js metadata for SEO."
-  },
-  {
-    "id": 4,
-    "title": "Mobile App UI",
-    "category": "Mobile / UI",
-    "slug": "mobile-app-ui",
-    "img": "https://ex-coders.com/wp/xiomi/wp-content/uploads/2025/05/2-1.jpg",
-    "description": "A visually consistent mobile UI prototype for a finance app, designed to provide users with a smooth and intuitive experience. The project included designing onboarding screens, login flow, a dashboard showing financial data, and settings pages. The UI is clean, modern, and follows best practices in mobile usability. Components were designed to be modular and reusable, enabling rapid iteration and development. The integration of charts using Chart.js gives users real-time data visualization for better financial tracking. This project sharpened my UI/UX design and React Native development skills.",
-    "features": [
-      "Modular UI components",
-      "Lightweight and fast navigation",
-      "Themed styles (light/dark)",
-      "Chart.js integration for financial data"
-    ],
-    "techStack": [
-      "Figma",
-      "React Native",
-      "Expo",
-      "React Navigation",
-      "Chart.js"
-    ],
-    "liveUrl": "https://example.com/mobile-ui",
-    "githubUrl": "https://github.com/yourusername/mobile-app-ui",
-    "duration": "3 weeks",
-    "role": "UI Designer & Developer",
-    "client": "Freelance project (NDA)",
-    "challenges": "Designing UI that is both attractive and functional across various devices.",
-    "solution": "Designed with Figma first, then used styled-components and React Native's responsive APIs."
   }
 ]
