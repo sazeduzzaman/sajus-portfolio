@@ -44,7 +44,7 @@ export default function TestimonialCards() {
       >
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col justify-between h-full p-6 text-white bg-[#2b2d31] rounded-xl shadow-lg">
+            <div className="flex flex-col justify-between border h-full p-6 text-white bg-[#2b2d31] rounded-xl shadow-lg">
               <p className="text-base italic leading-relaxed">
                 "{item.feedback}"
               </p>

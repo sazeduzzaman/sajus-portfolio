@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="bg-base-100 header-main">
+    <div className="header-main bg-base-100 dark:bg-green-500">
       <div className="container mx-auto">
         <div className="navbar text-base-content">
           <div className="navbar-start">
@@ -101,7 +101,7 @@ const Header = () => {
                 </svg>
               </div>
             </div>
-            {/* <ThemeToggle /> */}
+            <ThemeToggle />
           </div>
         </div>
       </div>

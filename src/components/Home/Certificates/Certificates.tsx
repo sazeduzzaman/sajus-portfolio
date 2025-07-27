@@ -5,7 +5,7 @@ import "./Certificates.css";
 
 const Certificates = () => {
   return (
-    <section className="px-4 py-10 md:px-10 lg:px-20">
+    <section className="px-4 py-20 md:px-10 lg:px-20">
       <div className="container mx-auto">
         {/* Heading */}
         <div className="mb-8 certificat-box">

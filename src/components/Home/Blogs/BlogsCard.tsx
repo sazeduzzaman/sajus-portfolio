@@ -59,7 +59,7 @@ const BlogsCard = () => {
     <div className="grid grid-cols-1 gap-6 p-6 md:grid-cols-3">
       {blogs.map((blog) => (
         <Link href={`/allBlogs/${blog.slug}`} key={blog.id}>
-          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-xl">
+          <div className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-sm hover:shadow-sm">
             <img
               src={blog.image}
               alt={blog.title}

@@ -23,8 +23,8 @@ const BannerContent = () => {
           strings={[
             "Digital Experiences.",
             "Web Interfaces.",
-            "Full-stack Solutions.",
-            "responsive Websites.",
+            "Full-Stack Solutions.",
+            "Responsive Websites.",
             "Modern UIs.",
           ]}
           typeSpeed={50}

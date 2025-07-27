@@ -6,7 +6,7 @@ import TestimonialCards from "./TestimonialCards";
 
 const Testimonial = () => {
   return (
-    <section className="px-4 py-16 text-white bg-[#1c1d20] md:px-10 lg:px-20">
+    <section className="py-20 text-white bg-[#1c1d20] md:px-10 lg:px-20">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Left Section */}
@@ -18,7 +18,7 @@ const Testimonial = () => {
               </h1>
 
               <h2 className="text-3xl font-extrabold leading-snug md:text-5xl testi-title">
-                Clients' Say <br />
+                Client's Say <br />
                 <span className="site-text">About Me</span>
               </h2>
             </div>

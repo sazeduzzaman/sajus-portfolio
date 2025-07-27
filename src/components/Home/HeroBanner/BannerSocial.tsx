@@ -5,10 +5,10 @@ const BannerSocial = () => {
     <div className="flex items-center justify-center h-full mobile-none">
       <div className="flex items-center gap-6 rotate-container">
         {[
-          { name: "Facebook", url: "#" },
-          { name: "Instagram", url: "#" },
-          { name: "LinkedIn", url: "#" },
-          { name: "GitHub", url: "#" },
+          { name: "Facebook", url: "https://www.facebook.com/iamsaju.99/" },
+          { name: "Fiverr", url: "https://www.fiverr.com/sazeduzzamansaj" },
+          { name: "LinkedIn", url: "https://www.linkedin.com/in/szamansaju/" },
+          { name: "GitHub", url: "https://github.com/sazeduzzaman" },
         ].map((link) => (
           <p key={link.name}>
             <a

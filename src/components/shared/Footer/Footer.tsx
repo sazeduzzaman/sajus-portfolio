@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="blob1"></div>
       <div className="blob2"></div>
       <div className="blob3"></div>
-      <footer className="container p-10 mx-auto footer sm:footer-horizontal text-base-content py-15">
+      <footer className="container p-10 mx-auto footer sm:footer-horizontal py-15">
         <aside>
           <Link href={"/"} className="text-xl normal-case">
             <div>

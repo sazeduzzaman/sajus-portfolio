@@ -66,7 +66,7 @@ const Cources = () => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-4 p-4 bg-gray-100 shadow-sm sm:flex-row rounded-2xl"
+              className="flex flex-col items-center gap-4 bg-gray-100 shadow-sm sm:flex-row rounded-2xl"
             >
               <Image
                 src={course.image}
@@ -79,15 +79,15 @@ const Cources = () => {
               <div>
                 <h4 className="text-2xl font-bold">{course.title}</h4>
                 <p className="flex items-center mt-3 text-base text-gray-700">
-                  <PiHouseLineBold className="me-2" />
+                  <PiHouseLineBold className="me-2 typing-text" />
                   {course.description}
                 </p>
                 <p className="flex items-center text-base text-gray-700">
-                  <LiaUsersSolid className="me-2" />
+                  <LiaUsersSolid className="me-2 typing-text" />
                   {course.batch}
                 </p>
                 <p className="flex items-center mt-3 text-sm text-gray-500">
-                  <BsClockHistory className="me-2" />
+                  <BsClockHistory className="me-2 typing-text" />
                   {course.date}
                 </p>
               </div>
@@ -100,7 +100,7 @@ const Cources = () => {
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="flex flex-col items-center gap-4 p-4 bg-gray-100 shadow-sm sm:flex-row rounded-2xl"
+              className="flex flex-col items-center gap-4 bg-gray-100 shadow-sm sm:flex-row rounded-2xl"
             >
               <Image
                 src={cert.image}

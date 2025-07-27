@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   
   return (
-    <html lang="en" >
+     <html lang="en" suppressHydrationWarning>
       <body
         className={`${figtreeSans.variable} ${spaceGroteskSans.variable} antialiased`}
       >

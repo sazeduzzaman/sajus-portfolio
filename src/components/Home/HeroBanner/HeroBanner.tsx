@@ -8,7 +8,7 @@ import BannerBottomSkills from "./BannerBottomSkills";
 const HeroBanner = () => {
   return (
     <>
-      <div className="px-4 py-10 banner-bg md:px-8 lg:px-16">
+      <div className="px-4 py-10 banner-bg md:px-8 lg:px-16 ">
         <div className="grid items-center grid-cols-1 gap-5 md:gap-5 md:grid-cols-2 lg:grid-cols-12">
           {/* Social (left side, vertical icons) */}
           <div className="flex justify-center lg:col-span-2 md:order-1">
