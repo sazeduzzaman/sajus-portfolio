@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+  .blog-info {
+    height: 300px;
+  }
+  .blog-container{
+    padding-bottom: 30px;
+  }
+}

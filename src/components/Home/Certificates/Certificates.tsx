@@ -1,23 +1,26 @@
 import React from "react";
 import { FaHandsClapping } from "react-icons/fa6";
 import Cources from "./Cources";
+import "./Certificates.css";
 
 const Certificates = () => {
   return (
-    <div>
-      <div className="container mx-auto my-10">
-        <h1 className="flex items-center justify-start mb-5 text-xl font-bold text-black mt-15">
-          <FaHandsClapping className="mr-5 text-2xl typing-text" />
-          Achivement
-        </h1>
-        <div>
-          <h2 className="mb-10 text-6xl font-extrabold">
-            Cource & <span className="typing-text">Certificates</span>
+    <section className="px-4 py-10 md:px-10 lg:px-20">
+      <div className="container mx-auto">
+        {/* Heading */}
+        <div className="mb-8 certificat-box">
+          <h1 className="flex items-center mb-3 text-xl font-bold text-black md:text-2xl">
+            <FaHandsClapping className="mr-3 text-2xl typing-text" />
+            Achievement
+          </h1>
+          <h2 className="text-3xl font-extrabold leading-tight sm:text-4xl md:text-6xl">
+            Course & <span className="typing-text">Certificates</span>
           </h2>
         </div>
+        {/* Courses */}
         <Cources />
       </div>
-    </div>
+    </section>
   );
 };
 

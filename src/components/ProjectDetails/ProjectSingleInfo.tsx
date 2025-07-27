@@ -50,7 +50,7 @@ const ProjectSingleInfo = ({ project }: Props) => {
           {/* Banner Image */}
           <div className="py-10">
             <Image
-              src={p.img}
+              src={p.img || "No Image"}
               width={1200}
               height={600}
               alt="Project Cover"
@@ -64,15 +64,17 @@ const ProjectSingleInfo = ({ project }: Props) => {
             <div className="space-y-10 lg:col-span-9">
               {/* Intro */}
               <div>
-                <p className="text-lg text-gray-600">{p.subtitle}</p>
+                <p className="text-lg text-gray-600">
+                  {p.subtitle || "No  subtitle"}
+                </p>
                 <h1 className="mt-2 text-2xl font-bold md:text-4xl">
                   {p.title}
                 </h1>
               </div>
-
               {/* Description */}
-              <p className="leading-relaxed text-gray-700">{p.description}</p>
-
+              <p className="leading-relaxed text-gray-700">
+                {p.description || "No  description"}
+              </p>
               {/* Research & Insights */}
               <div>
                 <h2>{p.researchInsightsTitle}</h2>

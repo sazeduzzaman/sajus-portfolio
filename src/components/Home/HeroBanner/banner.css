@@ -80,3 +80,23 @@
     transform: translateY(-15px); /* Move up */
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .banner-title {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  .banner-bg {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .section-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -5,12 +5,10 @@ import { BsClockHistory } from "react-icons/bs";
 import { LiaUsersSolid } from "react-icons/lia";
 import { PiHouseLineBold } from "react-icons/pi";
 import { IoBookmarksOutline, IoClose } from "react-icons/io5";
-import "./Certificates.css";
 
 const Cources = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Sample course data
   const courses = [
     {
       title: "Web Development Certificate",
@@ -28,7 +26,6 @@ const Cources = () => {
     },
   ];
 
-  // Sample certificate data
   const certificates = [
     {
       title: "Certification",
@@ -40,7 +37,7 @@ const Cources = () => {
   ];
 
   return (
-    <div className="relative p-6 px-0 text-black bg-white">
+    <div className="relative px-4 text-black bg-white sm:px-6 lg:px-0">
       {/* Modal Overlay */}
       {selectedImage && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90">
@@ -54,100 +51,90 @@ const Cources = () => {
             <Image
               src={selectedImage}
               alt="Zoomed"
-              width={400}
-              height={400}
+              width={800}
+              height={600}
               className="w-full h-auto shadow-lg rounded-2xl"
             />
           </div>
         </div>
       )}
 
-      {/* Grid Content */}
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-        {/* Courses Column */}
-        <div>
-          <div className="space-y-5">
-            {courses.map((course, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-4 p-4 bg-gray-100 shadow-sm rounded-2xl"
-              >
-                <Image
-                  src={course.image}
-                  alt={course.title}
-                  width={400}
-                  height={400}
-                  className="cursor-pointer rounded-2xl"
-                  onClick={() => setSelectedImage(course.image)}
-                />
-                <div>
-                  <h4 className="text-3xl font-bold">{course.title}</h4>
-                  <p className="flex items-center mt-5 text-lg text-gray-700">
-                    <PiHouseLineBold className="font-bold me-3" />
-                    {course.description}
-                  </p>
-                  {course.batch && (
-                    <p className="flex items-center text-lg text-gray-700">
-                      <LiaUsersSolid className="font-bold me-3" />
-                      {course.batch}
-                    </p>
-                  )}
-                  {course.date && (
-                    <p className="flex items-center mt-5 text-sm text-gray-500">
-                      <BsClockHistory className="font-bold me-3" />
-                      {course.date}
-                    </p>
-                  )}
-                </div>
+      {/* Grid */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        {/* Courses */}
+        <div className="space-y-6">
+          {courses.map((course, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center gap-4 p-4 bg-gray-100 shadow-sm sm:flex-row rounded-2xl"
+            >
+              <Image
+                src={course.image}
+                alt={course.title}
+                width={450}
+                height={450}
+                className="object-cover cursor-pointer rounded-2xl certificate-imge"
+                onClick={() => setSelectedImage(course.image)}
+              />
+              <div>
+                <h4 className="text-2xl font-bold">{course.title}</h4>
+                <p className="flex items-center mt-3 text-base text-gray-700">
+                  <PiHouseLineBold className="me-2" />
+                  {course.description}
+                </p>
+                <p className="flex items-center text-base text-gray-700">
+                  <LiaUsersSolid className="me-2" />
+                  {course.batch}
+                </p>
+                <p className="flex items-center mt-3 text-sm text-gray-500">
+                  <BsClockHistory className="me-2" />
+                  {course.date}
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-        {/* Certificates Column */}
-        <div>
-          <div className="space-y-2">
-            {certificates.map((cert, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-4 p-4 bg-gray-100 shadow-sm rounded-2xl"
-              >
-                <Image
-                  src={cert.image}
-                  alt={cert.title}
-                  width={400}
-                  height={400}
-                  className="cursor-pointer rounded-2xl"
-                  onClick={() => setSelectedImage(cert.image)}
-                />
-                <div className="">
-                  <h4 className="mb-5 text-3xl font-bold">{cert.title}</h4>
-                  <p className="flex items-center mt-5 text-lg text-gray-700">
-                    <PiHouseLineBold className="font-bold me-3" />
-                    {cert.description}
-                  </p>
-                  <p className="flex items-center text-lg text-gray-700">
-                    <IoBookmarksOutline className="font-bold me-3" />
-                    {cert.purpuse}
-                  </p>
-                  {cert.date && (
-                    <p className="flex items-center mt-5 text-sm text-gray-500">
-                      <BsClockHistory className="font-bold me-3" />
-                      {cert.date}
-                    </p>
-                  )}
-                </div>
+
+        {/* Certificates */}
+        <div className="space-y-6">
+          {certificates.map((cert, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center gap-4 p-4 bg-gray-100 shadow-sm sm:flex-row rounded-2xl"
+            >
+              <Image
+                src={cert.image}
+                alt={cert.title}
+                width={450}
+                height={450}
+                className="object-cover cursor-pointer rounded-2xl certificate-imge"
+                onClick={() => setSelectedImage(cert.image)}
+              />
+              <div>
+                <h4 className="text-2xl font-bold">{cert.title}</h4>
+                <p className="flex items-center mt-3 text-base text-gray-700">
+                  <PiHouseLineBold className="me-2" />
+                  {cert.description}
+                </p>
+                <p className="flex items-center text-base text-gray-700">
+                  <IoBookmarksOutline className="me-2" />
+                  {cert.purpuse}
+                </p>
+                <p className="flex items-center mt-3 text-sm text-gray-500">
+                  <BsClockHistory className="me-2" />
+                  {cert.date}
+                </p>
               </div>
-            ))}
-          </div>
-          <div>
-            <Image
-              src="/images/trophy.webp"
-              alt="Certificate"
-              width={400}
-              height={400}
-              className="trophy-image"
-            />
-          </div>
+            </div>
+          ))}
+
+          <Image
+            src="/images/trophy.webp"
+            alt="Trophy"
+            width={200}
+            height={200}
+            className="mx-auto rounded-xl mobile-none trophy-image"
+          />
         </div>
       </div>
     </div>

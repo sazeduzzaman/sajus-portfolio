@@ -38,20 +38,27 @@ const services = [
 
 const ServiceCards = () => {
   return (
-    <div className="grid gap-6 px-4 md:px-20 lg:px-40">
+    <div className="grid gap-6 px-4 py-10 md:px-12 lg:px-32">
       {services.map((service) => (
-        <Link href={service.link} key={service.id} className="block">
-          <div className="p-4 transition-all rounded-lg shadow-md service-cards md:flex md:justify-between md:items-center hover:shadow-lg">
-            <div className="flex items-center mb-4 space-x-10 md:mb-0">
-              <h3 className="text-lg font-semibold">{service.id}</h3>
-              <h3 className="text-lg font-semibold">{service.title}</h3>
-            </div>
-            <div className="flex items-center">
-              <p className="text-white md:flex-1 md:px-6 text-start">
-                {service.description}
-              </p>
-              <div>
-                <ButtonOne text="Details" />
+        <Link href={service.link} key={service.id} className="block group">
+          <div className="p-6 transition-all duration-300 bg-white shadow-md rounded-xl service-cards hover:shadow-lg dark:bg-gray-900">
+            <div className="flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+              {/* Left: ID and Title */}
+              <div className="flex items-center gap-6 service-info">
+                <h3 className="text-xl font-bold text-white">{service.id}</h3>
+                <h3 className="text-xl font-semibold text-white">
+                  {service.title}
+                </h3>
+              </div>
+
+              {/* Right: Description & Button */}
+              <div className="flex flex-col justify-between w-full gap-4 sm:flex-row sm:items-center md:w-auto md:gap-8">
+                <p className="text-gray-300 md:flex-1 text-start service-text-center">
+                  {service.description}
+                </p>
+                <div className="shrink-0 m-button">
+                  <ButtonOne text="Details" />
+                </div>
               </div>
             </div>
           </div>

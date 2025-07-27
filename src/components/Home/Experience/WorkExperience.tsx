@@ -41,8 +41,8 @@ const WordExperience = () => {
           key={index}
           className="flex flex-col items-start justify-between gap-2 p-4 mx-auto transition-colors duration-300 experience-items md:flex-row md:items-center md:gap-10"
         >
-          <span className="text-lg font-semibold text-gray-500">{exp.id}</span>
-          <span className="text-xl font-medium text-gray-500">{exp.title}</span>
+          <span className="text-lg font-semibold text-gray-200">{exp.id}</span>
+          <span className="text-xl font-medium text-gray-200">{exp.title}</span>
           <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-4">
             <Link
               href={exp.website}

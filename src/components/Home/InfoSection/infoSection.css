@@ -24,3 +24,27 @@
   position: relative;
   z-index: 2;
 }
+
+@media only screen and (max-width: 600px) {
+  .info-section {
+    text-align: center;
+  }
+  .info-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .m-text-center{
+    text-align: start;
+  }
+  .section-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-bg {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+}

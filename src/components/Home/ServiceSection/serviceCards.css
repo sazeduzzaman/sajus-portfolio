@@ -68,3 +68,31 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .service-title {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .site-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .service-text-center {
+    text-align: center;
+  }
+  .service-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -6,48 +6,47 @@ import TestimonialCards from "./TestimonialCards";
 
 const Testimonial = () => {
   return (
-    <section className="px-8 py-20 text-white bg-[#1c1d20]">
-      <div className="container mx-auto">
-        {/* Fixed: grid class and correct layout */}
-        <div className="grid items-center grid-cols-12 gap-8">
-          {/* Left Column */}
-          <div className="col-span-12 md:col-span-6">
-            <div>
-              <h1 className="flex items-center mb-5 text-xl font-bold site-text">
-                <FaHandsClapping className="mr-5 text-2xl site-text" />
+    <section className="px-4 py-16 text-white bg-[#1c1d20] md:px-10 lg:px-20">
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+          {/* Left Section */}
+          <div>
+            <div className="testimonial-box">
+              <h1 className="flex items-center mb-4 text-lg font-semibold site-text">
+                <FaHandsClapping className="mr-3 text-xl site-text" />
                 Exceptional Services
               </h1>
 
-              <h2 className="text-4xl font-extrabold leading-tight md:text-6xl">
-                Clients' Say Something <br />
-                <span className="site-text">About Me </span>
+              <h2 className="text-3xl font-extrabold leading-snug md:text-5xl testi-title">
+                Clients' Say <br />
+                <span className="site-text">About Me</span>
               </h2>
             </div>
-            <div className="w-1/2 mt-10 border card">
-              <div className="p-4 card-body">
-                <div className="flex items-center justify-between">
-                  <h1 className="text-5xl font-bold">4.8</h1>
-                  <div>
-                    <p className="text-lg text-gray-300">
-                      Based on 100+ reviews
-                    </p>
-                    <p className="text-lg text-gray-300">
-                      Your feedback matters!
-                    </p>
-                    <p>
-                      <BsStarFill className="inline text-yellow-400" />
-                      <BsStarFill className="inline text-yellow-400" />
-                      <BsStarFill className="inline text-yellow-400" />
-                      <BsStarFill className="inline text-yellow-400" />
-                      <BsStarFill className="inline text-yellow-400" />
-                    </p>
+
+            {/* Ratings Box */}
+            <div className="p-6 mt-8 border rounded-xl bg-[#2a2b30] review">
+              <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <h1 className="text-5xl font-bold">4.8</h1>
+                <div>
+                  <p className="text-sm text-gray-300">Based on 100+ reviews</p>
+                  <p className="text-sm text-gray-300">
+                    Your feedback matters!
+                  </p>
+                  <div className="mt-1">
+                    {[...Array(5)].map((_, i) => (
+                      <BsStarFill
+                        key={i}
+                        className="inline mr-1 text-yellow-400"
+                      />
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* Right Column */}
-          <div className="col-span-12 md:col-span-6">
+
+          {/* Right Section: Testimonials */}
+          <div>
             <TestimonialCards />
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const BannerSocial = () => {
   return (
-    <div className="flex items-center justify-center h-full">
+    <div className="flex items-center justify-center h-full mobile-none">
       <div className="flex items-center gap-6 rotate-container">
         {[
           { name: "Facebook", url: "#" },

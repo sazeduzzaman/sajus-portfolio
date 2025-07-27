@@ -1,6 +1,7 @@
 import ButtonTwo from "@/components/Buttons/ButtonTwo";
 import Link from "next/link";
 import React from "react";
+import './blog.css'
 
 const blogs = [
   {
@@ -64,7 +65,7 @@ const BlogsCard = () => {
               alt={blog.title}
               className="object-cover w-full h-48"
             />
-            <div className="p-5 h-65">
+            <div className="p-5 h-65 blog-info">
               <div className="flex items-center justify-between mb-4 text-sm text-gray-500">
                 <span>UI/UX Design</span>
                 <span>26 Jul 25</span>

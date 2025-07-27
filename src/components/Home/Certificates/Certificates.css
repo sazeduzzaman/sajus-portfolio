@@ -1,9 +1,28 @@
 .trophy-image {
-    border-radius: 10px;
-    width: 33%;
-    height: auto;
-    position: relative;
-    left: 98%;
-    bottom: -17.8rem;
-    transform: translateX(-62%);
+  border-radius: 10px;
+  width: 33%;
+  height: auto;
+  position: relative;
+  bottom: -8.8rem;
+  left: 33%;
+}
+@media only screen and (max-width: 600px) {
+  .mobile-none {
+    display: none !important;
+  }
+  .certificat-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .certificat-box h2 {
+    font-size: 40px;
+  }
+  .certificate-imge {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
 }

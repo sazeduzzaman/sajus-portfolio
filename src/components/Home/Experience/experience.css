@@ -8,7 +8,27 @@
   transition: all 0.3s ease;
 }
 
-.skills-box{
+.skills-box {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .experience-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .experience-box h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .experience-items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
