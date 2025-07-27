@@ -1,5 +1,5 @@
 import React from "react";
-import "./featureProject.css";
+import "./AllProject.css";
 import Link from "next/link";
 import ButtonOne from "@/components/Buttons/ButtonOne";
 
@@ -34,7 +34,7 @@ const projects = [
   },
 ];
 
-const FeatureCard = () => {
+const ProjectCard = () => {
   return (
     <div className="container mx-auto mb-20">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-1">
@@ -65,4 +65,4 @@ const FeatureCard = () => {
   );
 };
 
-export default FeatureCard;
+export default ProjectCard;
